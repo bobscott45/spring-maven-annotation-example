@@ -1,9 +1,14 @@
-package dev.robertscott.springmavenexample;
+package dev.robertscott.springmavenannotationexample;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class TrackCoach implements Coach {
 
     private ReportingService reportingService;
 
+    @Autowired
     public TrackCoach(ReportingService reportingService) {
         this.reportingService = reportingService;
     }

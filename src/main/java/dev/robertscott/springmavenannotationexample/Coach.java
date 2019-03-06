@@ -1,4 +1,4 @@
-package dev.robertscott.springmavenexample;
+package dev.robertscott.springmavenannotationexample;
 
 public interface Coach {
     String getDailyWorkout();
