@@ -3,8 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="fortuneTeller" class="dev.robertscott.springmavenexample.RandomFortuneTeller"></bean>
-    <bean id="myCoach" class="dev.robertscott.springmavenexample.TellerBaseballCoach">
-        <constructor-arg ref="fortuneTeller"></constructor-arg>
+    <bean id="reporter" class="dev.robertscott.springmavenexample.Feedback"></bean>
+    <bean id="myCoach" class="dev.robertscott.springmavenexample.BaseballCoach">
+        <constructor-arg ref="reporter"></constructor-arg>
     </bean>
 </beans>
